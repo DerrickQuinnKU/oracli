@@ -36,3 +36,10 @@ Note that stdout and stderr files will be saved to the directory in which you ru
 ## Issues
 
 If you have any problems, email me: derrickquinn [at] ku [dot] edu, or talk to me, or create an issue on github.
+
+## misc
+
+Why rust? could use `curl -F ...` - Answer (mostly Cargo):
+- Cargo allows this to be run on systems without the exact same utilities (curl, grep, etc...), unlike bash. Oracli should work anywhere LLVM does.
+- Cargo allows simple installation without root privileges (works on cycle server)
+- Cargo allows me to reuse existing tools unlike C/C++/others
