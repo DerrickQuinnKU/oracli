@@ -3,6 +3,7 @@
 oracli will send 0 or more input files to a specific version of the oracle, and write the stdout and stderr returned by the oracle. For `file.jeff`, oracli will create output files of the form `file.out.expected` and `file.err.expected`.
 
 ## Installation
+
 Ensure that cargo is installed:
 
 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
@@ -31,3 +32,7 @@ Specify an oracle version: `--o[0-9]+` and any number of file names ending in `.
 `oracli --o4 ../*.jeff`
 
 Note that stdout and stderr files will be saved to the directory in which you run oracli.
+
+## Issues
+
+If you have any problems, email me: derrickquinn [at] ku [dot] edu, or talk to me, or create an issue on github.
