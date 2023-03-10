@@ -1,6 +1,7 @@
 # Oracli
 
-To install, ensure that cargo is installed:
+## Installation
+Ensure that cargo is installed:
 
 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 
@@ -15,3 +16,16 @@ Lastly, install oracli with one of:
 `cargo install --git ssh://git@github.com/DerrickQuinnKU/oracli.git`
 
 This will take a little while as it builds all dependencies from scratch
+
+
+## Opertaion
+
+Specify an oracle version: `--o[0-9]+` and any number of file names ending in `.jeff`:
+
+`oracli --o4 final.jeff final1.jeff final_final.jeff final_final_final.jeff`
+
+`oracli --o4 *.jeff`
+
+`oracli --o4 ../*.jeff`
+
+Note that stdout and stderr files will be saved to the directory in which you run oracli.
