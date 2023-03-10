@@ -60,6 +60,7 @@ fn forsee(filename: &String, oracle: i32) -> Result<(String, String), String> {
     Ok((sanitize(out_body), sanitize(err_body)))
 }
 
+//Deal with special characters in html
 fn sanitize(code: String) -> String {
     code.replace("&gt;", ">")
         .replace("&lt;", "<")
