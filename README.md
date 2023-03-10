@@ -1,6 +1,6 @@
 # Oracli
 
-oracli will send 0 or more input files to a specific version of the oracle, and write the stdout and stderr returned by the oracle. For `file.jeff`, oracli will create output files of the form `file.out.expected` and `file.err.expected`.
+Oracli is a tool for accessing the KU EECS 665 oracle with a CLI frontend. It will send 0 or more input files to a specific version of the oracle, and write the stdout and stderr returned by the oracle to files in the working directory. For `file.jeff`, oracli will create output files of the form `file.out.expected` and `file.err.expected`.
 
 # Installation & Dependencies
 
@@ -24,9 +24,9 @@ Other: see https://www.rust-lang.org/tools/install
 This will take a little while as it builds all dependencies from scratch
 
 
-# Operation
+# Usage
 
-Specify an oracle version: (e.g., `--o4`) and any number of file names ending in `.jeff`:
+Specify an oracle version: (e.g., `--o4`) as a command line arg and any number of file names ending in `.jeff`:
 
 `oracli --o4 final.jeff final1.jeff final_final.jeff final_final_final.jeff`
 
