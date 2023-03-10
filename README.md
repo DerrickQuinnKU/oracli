@@ -23,7 +23,7 @@ This will take a little while as it builds all dependencies from scratch
 
 ## Opertaion
 
-Specify an oracle version: `--o[0-9]+` and any number of file names ending in `.jeff`:
+Specify an oracle version: (e.g., `--o4`) and any number of file names ending in `.jeff`:
 
 `oracli --o4 final.jeff final1.jeff final_final.jeff final_final_final.jeff`
 
@@ -37,9 +37,9 @@ Note that stdout and stderr files will be saved to the directory in which you ru
 
 If you have any problems, email me: derrickquinn [at] ku [dot] edu, or talk to me, or create an issue on github.
 
-## misc
+## Misc
 
 Why rust? could use `curl -F ...` - Answer (mostly Cargo):
-- Cargo allows this to be run on systems without the exact same utilities (curl, grep, etc...), unlike bash. Oracli should work anywhere LLVM does.
+- Cargo allows this to be run on systems without the exact same utilities (curl, grep, etc...), unlike bash. Oracli should work nearly anywhere that LLVM does.
 - Cargo allows simple installation without root privileges (works on cycle server)
 - Cargo allows me to reuse existing tools unlike C/C++/others
