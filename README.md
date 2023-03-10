@@ -1,5 +1,7 @@
 # Oracli
 
+oracli will send 0 or more input files to a specific version of the oracle, and write the stdout and stderr returned by the oracle. For `file.jeff`, oracli will create output files of the form `file.out.expected` and `file.err.expected`.
+
 ## Installation
 Ensure that cargo is installed:
 
