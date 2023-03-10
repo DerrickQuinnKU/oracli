@@ -57,8 +57,17 @@ fn forsee(filename: &String, oracle: i32) -> Result<(String, String), String> {
             .as_str(),
     );
     let err_body = String::from(BODY_RE.find(err_html).expect("See above").as_str());
-    Ok((out_body, err_body))
+    Ok((sanitize(out_body), sanitize(err_body)))
 }
+
+fn sanitize(code: String) -> String {
+    code.replace("&gt;", ">")
+        .replace("&lt;", "<")
+        .replace("&quot;", "\"")
+        .replace("&amp;", "&")
+}
+
+
 
 fn main() -> Result<(), String> {
     //Assemble list of files
